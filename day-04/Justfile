@@ -1,0 +1,23 @@
+day := "day-04"
+
+default:
+    @just --list --unsorted
+
+build-lib:
+    @mkdir -p bin
+    @gcc -Wall -o bin/lib.o -c lib.c
+
+build-test: build-lib
+    @gcc -Wall -o bin/test bin/lib.o test.c
+
+build: build-lib
+    @gcc -Wall -o bin/{{day}} bin/lib.o {{day}}.c
+
+run: build
+    @./bin/{{day}}
+
+test: build-test
+    @./bin/test
+
+clean:
+    @rm -rf ./bin
