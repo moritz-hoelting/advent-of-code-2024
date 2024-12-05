@@ -1,0 +1,15 @@
+pam-version: "2.0"
+name: "day_05"
+version: "0.1"
+synopsis: "Day 5 of adventofcode"
+description: """
+Day 5 of adventofcode
+"""
+maintainer: "Moritz Hölting"
+authors: "Moritz Hölting"
+license: ""
+homepage: ""
+bug-reports: ""
+dev-repo: ""
+depends: [ "ocaml" "ocamlfind" ]
+build: ["dune" "build" "-p" name "-j" jobs]
