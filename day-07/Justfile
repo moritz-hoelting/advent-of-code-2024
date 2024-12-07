@@ -1,0 +1,11 @@
+[private]
+default:
+    @just --list --unsorted
+
+# Run the program
+run:
+    @raku -I. day07.raku
+
+# Run tests
+test:
+    @raku -I. day07.rakutest
