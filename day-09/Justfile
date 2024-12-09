@@ -1,0 +1,2 @@
+default:
+    php -S localhost:8000 -d max_execution_time=300
