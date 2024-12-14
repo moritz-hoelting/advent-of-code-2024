@@ -4,10 +4,12 @@ members = [
     "day-11",
     "day-12",
     "day-13",
+    "day-14",
 ]
 resolver = "2"
 
 [workspace.dependencies]
+indicatif = "0.17.9"
 indoc = "2.0.5"
 itertools = "0.13.0"
 nom = "7.1.3"
