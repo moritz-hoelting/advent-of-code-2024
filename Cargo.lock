@@ -63,6 +63,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "day-15"
+version = "0.0.0"
+dependencies = [
+ "indoc",
+ "nom",
+]
+
+[[package]]
 name = "encode_unicode"
 version = "0.3.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
