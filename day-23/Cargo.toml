@@ -1,0 +1,16 @@
+[package]
+name = "day-23"
+version = "0.0.0"
+edition = "2021"
+
+[[bin]]
+name = "part1"
+path = "src/part1.rs"
+
+[[bin]]
+name = "part2"
+path = "src/part2.rs"
+
+[dependencies]
+indoc.workspace = true
+itertools.workspace = true
